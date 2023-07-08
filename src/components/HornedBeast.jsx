@@ -4,9 +4,9 @@ class HornedBeast extends React.Component{
   render(){
     return(
       <>
-        <h2>Animal Title</h2>
-        <img />
-        <p>Description</p>
+        <h2>{this.props.title}</h2>
+        <img src={this.props.image_url} alt={this.props.description} />
+        <p>{this.props.description}</p>
       </>
     )
   }
