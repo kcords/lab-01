@@ -5,7 +5,7 @@ class Header extends React.Component{
   render() {
     return(
       <header>
-        <h1>This is an application. Yay!</h1>
+        <h1>Horned Animals!</h1>
       </header>
     )
   }
