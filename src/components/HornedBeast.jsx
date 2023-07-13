@@ -17,10 +17,11 @@ class HornedBeast extends React.Component{
     return(
       <>
         <h2>{title}</h2>
+        <p>{this.state.likes > 0 && `Liked ${this.state.likes} times!`}</p>
         <img
           src={image}
           alt={description}
-          style={{maxWidth: '200px'}}
+          style={{maxWidth: '200px', cursor: 'pointer'}}
           onClick={this.handleLikeIncrement}
         />
         <p>{description}</p>
