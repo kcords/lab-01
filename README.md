@@ -36,17 +36,17 @@ Start time: 6:30 pm
 
 Finish time: 7:00 pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 30 min
 ##########################################################
 Number and name of feature: Feature #2: Allow Users to Favorite Individual Beasts
 
 Estimate of time needed to complete: 1.5hr
 
-Start time: _____
+Start time: 7:00 pm
 
-Finish time: _____
+Finish time: 7:25 pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 25 min
 ##########################################################
 Number and name of feature: Feature 3: Bootstrap
 
