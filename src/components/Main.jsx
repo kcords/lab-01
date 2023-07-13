@@ -12,9 +12,17 @@ class Main extends React.Component{
     return(
       <main>
         <Container fluid>
-          <Row>
+          <Row className="mb-4">
             {beastData.map(beast =>
-             <Col key={beast._id} xs={12} sm={6} md={4} lg={3} xl={2}>
+             <Col
+              key={beast._id}
+              xs={12}
+              sm={6}
+              md={4}
+              lg={3}
+              xl={2}
+              className="d-flex"
+            >
               <HornedBeast
                 title={beast.title}
                 image={beast.image_url}
