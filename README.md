@@ -52,11 +52,14 @@ Number and name of feature: Feature 3: Bootstrap
 
 Estimate of time needed to complete: 2.5hr
 
-Start time: _____
+Start time: 7:30 pm
 
-Finish time: _____
+Finish time: 8:50 pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1.8 hr
+
+References:
+https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-cards-the-same-height-in-card-columns
 ##########################################################
 Number and name of feature: Stretch Goal: Add Interaction
 
