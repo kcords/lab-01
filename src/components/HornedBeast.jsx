@@ -1,9 +1,8 @@
 import React from 'react';
 
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
-class HornedBeast extends React.Component{
+export default class HornedBeast extends React.Component{
   constructor(props) {
     super(props)
     this.state = {likes: 0};
@@ -33,22 +32,10 @@ class HornedBeast extends React.Component{
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
         </Card.Body>
-        <Card.Footer className="text-center">
-          <Button
-            onClick={this.handleLikeIncrement}
-            variant="danger"
-          >
-            &#9829;
-            {
-              this.state.likes > 0
-                ? ` liked ${this.state.likes}x`
-                : ` add a like`
-            }
-          </Button>
+        <Card.Footer className="text-bg-light">
+            &#x2764; {this.state.likes}
         </Card.Footer>
       </Card>
     )
   }
 }
-
-export default HornedBeast;

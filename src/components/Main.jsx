@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 import HornedBeast from './HornedBeast'
 
-class Main extends React.Component{
+export default class Main extends React.Component{
   render() {
     const { beastData } = this.props;
     return(
@@ -36,5 +36,3 @@ class Main extends React.Component{
     )
   }
 }
-
-export default Main;
