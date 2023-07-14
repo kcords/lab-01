@@ -65,8 +65,8 @@ Number and name of feature: Stretch Goal: Add Interaction
 
 Estimate of time needed to complete: 1.5hr
 
-Start time: _____
+Start time: 7:45 pm
 
-Finish time: _____
+Finish time: 8:45 pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1 hr
