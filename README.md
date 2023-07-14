@@ -26,3 +26,47 @@ Kyle Cordell
     npm run dev
     ```
 2. Open your web browser and navigate to http://localhost:5173 to access the application.
+
+##########################################################
+Number and name of feature: Feature #1: Display Images
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 6:30 pm
+
+Finish time: 7:00 pm
+
+Actual time needed to complete: 30 min
+##########################################################
+Number and name of feature: Feature #2: Allow Users to Favorite Individual Beasts
+
+Estimate of time needed to complete: 1.5hr
+
+Start time: 7:00 pm
+
+Finish time: 7:30 pm
+
+Actual time needed to complete: 30 min
+##########################################################
+Number and name of feature: Feature 3: Bootstrap
+
+Estimate of time needed to complete: 2.5hr
+
+Start time: 7:30 pm
+
+Finish time: 8:50 pm
+
+Actual time needed to complete: 1.8 hr
+
+References:
+https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-cards-the-same-height-in-card-columns
+##########################################################
+Number and name of feature: Stretch Goal: Add Interaction
+
+Estimate of time needed to complete: 1.5hr
+
+Start time: 7:45 pm
+
+Finish time: 8:45 pm
+
+Actual time needed to complete: 1 hr
