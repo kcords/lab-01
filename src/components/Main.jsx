@@ -8,7 +8,7 @@ import HornedBeast from './HornedBeast'
 
 export default class Main extends React.Component{
   render() {
-    const { beastData } = this.props;
+    const { beastData, handleBeastSelection } = this.props;
     return(
       <main>
         <Container fluid>
@@ -24,9 +24,8 @@ export default class Main extends React.Component{
               className="d-flex"
             >
               <HornedBeast
-                title={beast.title}
-                image={beast.image_url}
-                description={beast.description}
+                beast={beast}
+                handleBeastSelection={handleBeastSelection}
               />
              </Col>
             )}
