@@ -7,6 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import beastData from './assets/data.json'
 export default class App extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedBeast: null
+    }
+  }
+
   render() {
     return(
       <>
