@@ -70,3 +70,23 @@ Start time: 7:45 pm
 Finish time: 8:45 pm
 
 Actual time needed to complete: 1 hr
+##########################################################
+Number and name of feature: Feature #1: Display a Modal
+
+Estimate of time needed to complete: 1 hr
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+##########################################################
+Number and name of feature: Stretch Goal: Fuzzy search
+
+Estimate of time needed to complete: 1 hr
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
