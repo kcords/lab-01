@@ -85,8 +85,9 @@ Number and name of feature: Stretch Goal: Fuzzy search
 
 Estimate of time needed to complete: 1 hr
 
-Start time: _____
+Start time: 2:15 pm
 
-Finish time: _____
+Finish time: 4:15 pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 2 hr
+References: Utilized ChatGPT & regexr.com to build the pattern for the `fuzzySearchPattern` variable, however, the implementation of the input and filter was done entirely by me
