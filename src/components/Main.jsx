@@ -26,7 +26,7 @@ export default class Main extends React.Component{
     return(
       <main>
         <Container fluid>
-          <Row>
+          <Row className="sticky-top">
             <Col
               xs={12}
               sm={12}
@@ -51,7 +51,7 @@ export default class Main extends React.Component{
                   this.setState({searchTerm: ''})
                 }}
               >
-                Clear
+                &#10005;
               </Button>
               </InputGroup>
             </Col>
