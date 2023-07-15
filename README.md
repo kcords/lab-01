@@ -75,11 +75,11 @@ Number and name of feature: Feature #1: Display a Modal
 
 Estimate of time needed to complete: 1 hr
 
-Start time: _____
+Start time: 1:00 pm
 
-Finish time: _____
+Finish time: 2:00 pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1 hr
 ##########################################################
 Number and name of feature: Stretch Goal: Fuzzy search
 
