@@ -70,3 +70,24 @@ Start time: 7:45 pm
 Finish time: 8:45 pm
 
 Actual time needed to complete: 1 hr
+##########################################################
+Number and name of feature: Feature #1: Display a Modal
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 1:00 pm
+
+Finish time: 2:00 pm
+
+Actual time needed to complete: 1 hr
+##########################################################
+Number and name of feature: Stretch Goal: Fuzzy search
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 2:15 pm
+
+Finish time: 4:15 pm
+
+Actual time needed to complete: 2 hr
+References: Utilized ChatGPT & regexr.com to build the pattern for the `fuzzySearchPattern` variable, however, the implementation of the input and filter was done entirely by me

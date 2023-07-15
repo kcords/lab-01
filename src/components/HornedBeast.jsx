@@ -15,24 +15,30 @@ export default class HornedBeast extends React.Component{
   }
 
   render(){
-    const {title, image, description} = this.props;
+    const { beast, handleBeastSelection } = this.props;
+    const { title, image_url: image, description } = beast;
+
     return(
       <Card
         bg="light"
         border="secondary"
         className="mb-4"
-      >
+        >
         <Card.Img
           src={image}
           alt={description}
           style={{cursor: 'pointer'}}
-          onClick={this.handleLikeIncrement}
+          onClick={() => handleBeastSelection(beast)}
           />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
         </Card.Body>
-        <Card.Footer className="text-bg-light">
+        <Card.Footer
+          style={{cursor: 'pointer'}}
+          className="text-bg-light"
+          onClick={this.handleLikeIncrement}
+        >
             &#x2764; {this.state.likes}
         </Card.Footer>
       </Card>
