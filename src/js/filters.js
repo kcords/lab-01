@@ -1,6 +1,6 @@
 "use strict";
 
-const filterBeasts = (beastList, filters) => {
+export const filterBeasts = (beastList, filters) => {
   const { searchTerm, horns } = filters || {};
   console.log({ beastList, filters });
   return beastList.filter((beast) => {
@@ -24,4 +24,11 @@ const filterBeasts = (beastList, filters) => {
   });
 };
 
-export default filterBeasts;
+export const filterUniqueHornCounts = (beastList) => {
+  return [
+    "All",
+    ...Array.from(new Set(beastList.map(({ horns }) => horns))).sort(
+      (a, b) => a - b
+    ),
+  ];
+};
