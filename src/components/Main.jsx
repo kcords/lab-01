@@ -1,27 +1,41 @@
-import React from 'react';
+import React from "react";
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Button from "react-bootstrap/Button";
 
 import HornedBeast from "./HornedBeast";
+import { filterBeasts, filterUniqueHornCounts } from "../js/filters";
 
 export default class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      filters: {
+        searchTerm: "",
+        horns: "All",
+      },
       filteredBeasts: this.props.beastData,
-      uniqueHornCounts: [
-        "All",
-        ...Array.from(
-          new Set(this.props.beastData.map(({ horns }) => horns))
-        ).sort((a, b) => a - b),
-      ],
+      uniqueHornCounts: filterUniqueHornCounts(this.props.beastData),
     };
   }
+
+  handleSetFilters = ({ target: { name, value } }) => {
+    const filters = { ...this.state.filters };
+    filters[name] = value;
+    const filteredBeasts = filterBeasts(this.props.beastData, filters);
+    this.setState({ filters, filteredBeasts });
+  };
+
+  handleFormReset = () => {
+    this.setState({
+      filters: { searchTerm: "", horns: "All" },
+      filteredBeasts: this.props.beastData,
+    });
+  };
 
   render() {
     const { handleBeastSelection } = this.props;
@@ -37,11 +51,17 @@ export default class Main extends React.Component {
                     aria-label="Search"
                     aria-describedby="search"
                     name="searchTerm"
+                    value={this.state.filters.searchTerm}
+                    onInput={this.handleSetFilters}
                   />
                   <InputGroup.Text id="horn-filter">
                     Horn Filter
                   </InputGroup.Text>
-                  <Form.Select name="horns">
+                  <Form.Select
+                    name="horns"
+                    value={this.state.filters.horns}
+                    onChange={this.handleSetFilters}
+                  >
                     {this.state.uniqueHornCounts.map((label) => (
                       <option key={label}>{label}</option>
                     ))}
@@ -49,7 +69,7 @@ export default class Main extends React.Component {
                   <Button
                     variant="outline-secondary"
                     id="clear-search"
-                    type="reset"
+                    onClick={this.handleFormReset}
                   >
                     &#10005;
                   </Button>
