@@ -2,7 +2,6 @@
 
 export const filterBeasts = (beastList, filters) => {
   const { searchTerm, horns } = filters || {};
-  console.log({ beastList, filters });
   return beastList.filter((beast) => {
     if (!searchTerm.length && horns === "All") return true;
     const fuzzySearchPattern = searchTerm
